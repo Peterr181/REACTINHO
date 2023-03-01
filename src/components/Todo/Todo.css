@@ -1,0 +1,275 @@
+.todo__container {
+}
+.todo__header {
+  color: #fff;
+  font-size: 3rem;
+  padding-top: 10rem;
+}
+.todo__content {
+}
+
+.input__container {
+  display: flex;
+}
+
+.todo__input {
+  background: #191c24;
+  padding: 13px 20px 11px;
+  border: 1px solid #2c2e33;
+  color: #fff;
+  width: 700px;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.todoadd__button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.todo__button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.todoadd__button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.todoadd__button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.todo__remove__button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #ff2400 0,
+    #e32636 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.todo__remove__button:focus {
+  box-shadow: #ff2400 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff2400 0 -3px 0 inset;
+}
+
+.todo__remove__button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ff2400 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.todo__remove__button:active {
+  box-shadow: #ff2400 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.todo__button_container {
+  width: 100%;
+  height: 100%;
+}
+.todo__form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.todo__list {
+  color: #fff;
+  list-style: none;
+  margin-top: 3rem;
+
+  margin: 0 auto;
+}
+
+.todo__text {
+  word-wrap: break-word;
+  font-size: 1.6rem;
+}
+
+.todo__remove__button {
+  border: none;
+  padding: 1rem;
+}
+
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  background: #191c24;
+  border-bottom: 1px solid grey;
+  word-break: break-all;
+}
+
+.todo__list__container {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.background__img {
+  width: 100%;
+}
+
+.todo__header {
+  color: #fff;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  z-index: 6000;
+  text-align: center;
+  transform: translateY(-120px);
+}
+
+.todo__buttons__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.todo__edit__input {
+  background: #191c24;
+  padding: 13px 20px 11px;
+  border: 1px solid #2c2e33;
+  color: #fff;
+  width: 50%;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.todo__save__button {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, green 0, green 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, green 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.todo__save__button:focus {
+  box-shadow: green 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, green 0 -3px 0 inset;
+}
+
+.todo__save__button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, green 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.todo__save__button:active {
+  box-shadow: green 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.todo__huge__container {
+  margin-top: -10rem;
+}
+
+.todo__huge__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.todo__wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../images/todo-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1206px) {
+  .todo__input {
+    width: 100%;
+  }
+  .input__container {
+    margin: 0 auto;
+  }
+}

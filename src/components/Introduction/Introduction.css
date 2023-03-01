@@ -1,0 +1,336 @@
+.introduction__message__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgb(18, 4, 55);
+  background: linear-gradient(
+    113deg,
+    rgba(18, 4, 55, 1) 0%,
+    rgba(84, 39, 194, 1) 87%,
+    rgba(131, 91, 229, 1) 100%
+  );
+  width: 100%;
+  gap: 10rem;
+  border-radius: 11px;
+  margin-top: 10rem;
+}
+.message_picture__container {
+}
+.intro_img {
+}
+
+.message_text__container h2 {
+  font-size: 1.8rem;
+}
+.message_text__container p {
+  font-size: 1.4rem;
+}
+
+.button__container {
+  padding-left: 15rem;
+  padding-right: 5rem;
+}
+
+.button__container a {
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 11px;
+  font-size: 1.3rem;
+  transition: 0.2s all;
+}
+
+.button__container a:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+.introduction__benefits__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 3rem;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.introduction__benefits__item {
+  background-color: #191c24;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 11px;
+  box-shadow: rgba(84, 39, 194, 1) 0px 4px 4px;
+  transition: 0.5s all;
+}
+
+.introduction__benefits__item:hover {
+  transform: translateY(-20px);
+}
+
+.introduction__benefits__item p {
+  color: #6c7293;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.introduction__benefits__item h2 {
+  font-size: 1.8rem;
+}
+
+.introduction__final__container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #191c24;
+  box-shadow: rgba(84, 39, 194, 1) 0px 4px 4px;
+  border-radius: 11px;
+
+  transition: 0.5s all;
+}
+
+.introduction__final__container:hover {
+  transform: translateY(-10px);
+}
+.introduction__final {
+  padding: 2rem;
+  color: #fff;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduction__final__container h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.introduction__final__text__container {
+  font-size: 1.8rem;
+  padding-left: 2rem;
+}
+
+.introduction__final__text__container ul li {
+  list-style: none;
+}
+
+.introduction__final__text__container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.introduction__final__img__container {
+  text-align: right;
+}
+.mobile__logo {
+  display: none;
+}
+
+.stress_img {
+  width: 70%;
+}
+
+.message_picture__container2 {
+  display: none;
+}
+
+.logo__name__mobile {
+  display: none;
+}
+.mobile__header {
+  display: none;
+}
+.intro__wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.introduction__container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.introduction__content__wrapper {
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1500px) {
+  .introduction__benefits__container {
+    padding: 2rem;
+  }
+
+  .introduction__final__container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #191c24;
+    box-shadow: rgba(84, 39, 194, 1) 0px 4px 4px;
+    border-radius: 11px;
+
+    transition: 0.5s all;
+  }
+
+  .introduction__final__img__container {
+    display: none;
+  }
+  .stress_img {
+    display: none;
+  }
+
+  .introduction__final {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .introduction__message__container {
+    display: flex;
+    gap: 0;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+
+  .message__text__container__flex {
+  }
+
+  .button__container {
+    padding-left: 0;
+    padding-right: 0;
+    display: none;
+  }
+
+  .form__input {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1369px) {
+  .introduction__benefits__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  .introduction__message__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .message_text__container {
+    display: none;
+  }
+
+  .message_picture__container {
+    display: none;
+  }
+
+  .message_picture__container2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .message_picture__container2 p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .owner__contact {
+    display: none;
+  }
+
+  .introduction__final__container {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  .introduction__message__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .message_text__container {
+    display: none;
+  }
+
+  .message_picture__container {
+    display: none;
+  }
+
+  .message_picture__container2 {
+    display: none;
+  }
+  .message_picture__container2 p {
+    font-size: 1.6rem;
+  }
+  .mobile__header {
+    display: block;
+    padding: 3rem;
+  }
+
+  .logo__name {
+    display: none;
+  }
+  .mobile__logo {
+    display: block;
+    text-align: center;
+    padding-left: 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    transform: translateY(-3px);
+  }
+
+  .logo__name__mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .introduction__benefits__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .introduction__final__container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #191c24;
+    box-shadow: rgb(84 39 194) 0px 4px 4px;
+    border-radius: 11px;
+    transition: 0.5s all;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .introduction__final__text__container {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .introduction__final__text__container {
+    font-size: 1.2rem;
+  }
+}

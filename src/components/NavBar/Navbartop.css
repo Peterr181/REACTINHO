@@ -1,0 +1,243 @@
+.navbar-top {
+  background-color: #191c24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9888;
+}
+
+.logo__name {
+  color: #fff;
+  text-align: center;
+  padding-left: 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.navbar-top__right {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  gap: 3rem;
+  padding-right: 4rem;
+  z-index: 9000;
+}
+
+.form__container {
+  background-color: inherit; /* Set the background color of the parent container */
+}
+
+.input__text {
+  background: #191c24;
+  padding: 13px 20px 11px;
+  border: 1px solid #2c2e33;
+  color: #fff;
+  width: 400px;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.form__input {
+  color: inherit;
+  font-size: 0.9375rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+
+  line-height: 1;
+}
+
+.owner__contact {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #61dbfb;
+  padding: 0.7rem;
+  border-radius: 11px;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+
+  transition: 0.2s all;
+}
+
+.owner__contact:hover {
+  background-color: cyan;
+}
+
+.owner__face {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.owner__face__container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.owner__name {
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.menu-down {
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-menu {
+  display: none;
+
+  position: absolute;
+  top: calc(
+    100% + 15px
+  ); /* set the top position to the bottom of the owner__face__container */
+  left: 15%;
+  margin: 0;
+  padding: 0;
+
+  background-color: white;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* make sure the popup is on top of other elements */
+}
+
+.popup-menu ul li {
+  list-style: none;
+  font-size: 1.8rem;
+  background-color: #191c24;
+  color: #fff;
+  padding: 2rem;
+  border: 1px solid #333;
+}
+.ech {
+  display: none;
+}
+
+.popup-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  display: block;
+}
+
+.borderli {
+  border-top: 1px solid grey;
+
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+.borderli:hover {
+  background-color: black;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home {
+  margin-right: 0.5rem;
+  font-size: 2.3rem;
+  line-height: 1;
+  background: rgba(108, 114, 147, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings__icon {
+  color: green;
+}
+
+.logout__icon {
+  color: red;
+}
+
+.advanced__settings {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.navopen__button {
+  cursor: pointer;
+  display: none;
+}
+
+.top__icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-top__right {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar-top__right {
+  }
+
+  .navopen__button {
+    cursor: pointer;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  .navopen__button {
+    cursor: pointer;
+    display: block;
+    color: #6c7293;
+    padding-left: 2rem;
+  }
+  .owner__name {
+    display: none;
+  }
+  .mobile__icon {
+    display: none;
+  }
+  .owner__face {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  .owner__face__container {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+
+  .popup-menu {
+    left: -20%;
+  }
+
+  .home {
+    border-left: 1px solid rgba(108, 114, 147, 0.2);
+    border-radius: 0;
+    background-color: inherit;
+  }
+
+  .navbar-top {
+    gap: 3rem;
+  }
+}

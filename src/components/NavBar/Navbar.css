@@ -1,0 +1,314 @@
+.sidebar {
+  background-color: #191c24;
+  min-height: 100vh;
+  width: 280px;
+  padding: 0;
+  padding-right: 2rem !important;
+  padding-top: 5rem;
+}
+
+.react-color {
+  color: #61dbfb;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.react-color:hover {
+  color: cyan;
+}
+
+.nav {
+  list-style: none;
+  color: #6c7293;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.nav__profile__container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.nav__profile__container__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+}
+.face {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.user__name {
+  color: #fff;
+}
+.user__status {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+.nav__item {
+  padding: 1rem;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+
+  transition: 0.8s all;
+}
+
+.nav__item:hover {
+  background-color: black;
+}
+
+.nav__category {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  background-color: inherit;
+  padding-left: 1.5rem;
+}
+
+.navbar__top {
+  background-color: pink;
+  flex-direction: row !important;
+}
+
+.dots {
+  cursor: pointer;
+}
+
+.home {
+  margin-right: 0.5rem;
+  font-size: 2.3rem;
+  line-height: 1;
+  background: rgba(108, 114, 147, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  color: green;
+}
+
+.todo {
+  color: purple;
+}
+.weather {
+  color: #fff;
+}
+
+.gym {
+  color: blueviolet;
+}
+
+.itcareer {
+  color: orange;
+}
+
+.socialmedia__container {
+  display: flex;
+  gap: 2rem;
+  left: 30px;
+  padding-bottom: 1rem;
+  border-top: 1px solid rgba(108, 114, 147, 0.2);
+  padding-top: 1rem;
+}
+
+.socialmedia__icon {
+  font-size: 5rem;
+  color: #61dbfb;
+
+  transition: 0.2s all;
+}
+
+.socialmedia__icon:hover {
+  color: cyan;
+}
+
+.sidebar.active {
+  opacity: 1; /* set opacity to 1 when active */
+  right: 0;
+}
+
+.active1 {
+  background-color: black;
+
+  border-left: 4px solid green;
+  transition: none;
+
+  color: #fff;
+}
+
+.active2 {
+  background-color: black;
+
+  border-left: 4px solid purple;
+  transition: none;
+
+  color: #fff;
+}
+
+.active3 {
+  background-color: black;
+
+  border-left: 4px solid #fff;
+  transition: none;
+
+  color: #fff;
+}
+
+.active4 {
+  background-color: black;
+
+  border-left: 4px solid violet;
+  transition: none;
+
+  color: #fff;
+}
+
+.active5 {
+  background-color: black;
+
+  border-left: 4px solid orange;
+  transition: none;
+
+  color: #fff;
+}
+
+.active6 {
+  background-color: black;
+
+  border-left: 4px solid gray;
+  transition: none;
+
+  color: #fff;
+}
+
+.nav__profile__container__face {
+  position: relative;
+}
+
+.popup-menu2 {
+  display: none;
+
+  position: absolute;
+  top: calc(
+    100% + 15px
+  ); /* set the top position to the bottom of the owner__face__container */
+  left: 30%;
+  margin: 0;
+  padding: 0;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* make sure the popup is on top of other elements */
+}
+
+.popup-menu2 ul li {
+  font-size: 2rem;
+  background-color: #191c24;
+  color: #fff;
+  padding: 1.3rem;
+  border: 1px solid #333;
+  list-style: none;
+}
+
+.show2 {
+  display: block;
+}
+
+.edit__name {
+  cursor: pointer;
+}
+
+.help {
+  display: none;
+}
+.input__name {
+  background: #191c24;
+  padding: 13px 20px 11px;
+  border: 1px solid #2c2e33;
+  color: #fff;
+  width: 100px;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.socialmedia__wrapper {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.count {
+  position: absolute;
+  left: 66%;
+  width: 10px;
+  height: 10px;
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 0.625rem;
+  line-height: 1.5;
+  top: 35px;
+  border: 2px solid #2c2e33;
+}
+
+.bg-success {
+  background-color: #00d25b !important;
+}
+
+@media screen and (max-width: 722px) {
+  .content__wrapper {
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+  }
+
+  .sidebar {
+    position: fixed;
+    order: 0;
+    background-color: #191c24;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    max-height: calc(100vh - 70px);
+
+    z-index: 8000;
+    opacity: 0; /* set initial opacity to 0 */
+    transition: opacity 0.3s ease-out, right 0.3s ease-out; /* animate opacity and right */
+  }
+
+  .nav__item {
+    font-size: 1.6rem;
+  }
+
+  .nav__profile__container {
+    display: none;
+  }
+  .socialmedia__icon {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
