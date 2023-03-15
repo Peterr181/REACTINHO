@@ -3,13 +3,14 @@ Hey, check my newest project named ,,REACTINHO''. It's simple project built in r
 
 
 <h2>Live version!</h2>
-[Your Link Here](https://reactinhoo.netlify.app/)
+https://reactinhoo.netlify.app/
 
 
 
 
 
 <h2 align="center">Main page</h2>
-![obraz](https://user-images.githubusercontent.com/102172769/222213201-da56b7f5-d7d1-4db6-894f-b7ae633a6795.png)
+
 
 Users can read about this website at first showing introduction component.
+![obraz](https://user-images.githubusercontent.com/102172769/222213201-da56b7f5-d7d1-4db6-894f-b7ae633a6795.png)
