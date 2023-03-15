@@ -3,7 +3,7 @@ Hey, check my newest project named ,,REACTINHO''. It's simple project built in r
 
 
 <h2>Live version!</h2>
-Click on me to check live version: [Live](reactinhoo.netlify.app/).
+[Live](reactinhoo.netlify.app)
 
 
 
