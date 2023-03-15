@@ -7,7 +7,7 @@ Hey, check my newest project named ,,REACTINHO''. It's simple project built in r
 
 
 
-How it looks?
+
 
 <h2 align="center">Main page</h2>
 ![obraz](https://user-images.githubusercontent.com/102172769/222213201-da56b7f5-d7d1-4db6-894f-b7ae633a6795.png)
