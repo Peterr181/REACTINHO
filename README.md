@@ -2,7 +2,7 @@
 Hey, check my newest project named ,,REACTINHO''. It's simple project built in react.js where user can check weather make themselves todo list, create meme to share someone or even check what developer you are! Remember this project it's still in production It may have small bugs and have on mind that that's not final version! I want to make it bigger than it is actuall. 
 
 
-<h2>Live version!</h2>
+<h2 align="center">Live version!</h2>
 https://reactinhoo.netlify.app/
 
 
