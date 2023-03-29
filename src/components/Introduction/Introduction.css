@@ -150,6 +150,26 @@
   gap: 2rem;
 }
 
+.tasklist {
+  color: green;
+}
+
+.work {
+  color: brown;
+}
+
+.exercise {
+  color: purple;
+}
+
+.videogame {
+  color: blue;
+}
+
+.star {
+  color: yellow;
+}
+
 .introduction__container {
   max-width: 1250px;
   margin: 0 auto;

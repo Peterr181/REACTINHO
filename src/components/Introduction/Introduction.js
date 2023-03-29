@@ -75,7 +75,9 @@ const Introduction = () => {
             <div className="introduction__final__text__container">
               <ul>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined">checklist</span>
+                  <span class="material-symbols-outlined tasklist">
+                    checklist
+                  </span>
                   <li>You will be always perfect organized!</li>
                 </div>
                 <div className="intro__wrap">
@@ -83,19 +85,23 @@ const Introduction = () => {
                   <li>Always up to date with weather news!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined">exercise</span>
+                  <span class="material-symbols-outlined exercise">
+                    exercise
+                  </span>
                   <li>Well informed about gym stuff!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined">work</span>
+                  <span class="material-symbols-outlined work">work</span>
                   <li>Know everything about your future career!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined">sports_esports</span>
+                  <span class="material-symbols-outlined videogame">
+                    sports_esports
+                  </span>
                   <li>Be more relaxed by playing short video game!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined star">star</span>
                   <li>Be delighted with excellent futuristic design!</li>
                 </div>
               </ul>

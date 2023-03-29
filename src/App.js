@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Navbartop from "./components/NavBar/Navbartop";
 import Todo from "./components/Todo/Todo";
@@ -7,52 +7,51 @@ import Introduction from "./components/Introduction/Introduction";
 import Career from "./components/Career/Career";
 import Weather from "./components/Weather/Weather";
 import Memer from "./components/Memer/Memer";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { TodoContext } from "./components/Todo/TodoContext";
 
 function App() {
   const [todos, setTodos] = useState([]);
-
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/");
+  }, []);
 
   const handleButtonClick = () => {
     setIsButtonClicked((prevState) => !prevState);
   };
+
   return (
     <TodoContext.Provider value={{ todos, setTodos }}>
-      <Router>
+      <>
         <div className="content__wrapper">
           <Navbar
             isButtonClicked={isButtonClicked}
             setIsButtonClicked={setIsButtonClicked}
           />
           <div className="mainly__content">
-            <Switch>
-              <Route exact path="/">
-                <Introduction />
-              </Route>
-              <Route path="/todo">
-                <div className="todo__wrapper">
-                  <Todo />
-                </div>
-              </Route>
-              <Route path="/weatherapp">
-                <Weather />
-              </Route>
-              <Route path="/memer">
-                <Memer />
-              </Route>
-              <Route path="/career">
-                <Career />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Introduction />} />
+              <Route
+                path="/todo"
+                element={
+                  <div className="todo__wrapper">
+                    <Todo />
+                  </div>
+                }
+              />
+              <Route path="/weatherapp" element={<Weather />} />
+              <Route path="/memer" element={<Memer />} />
+              <Route path="/career" element={<Career />} />
+            </Routes>
           </div>
         </div>
         <Navbartop
           isButtonClicked={isButtonClicked}
           handleButtonClick={handleButtonClick}
         />
-      </Router>
+      </>
     </TodoContext.Provider>
   );
 }
