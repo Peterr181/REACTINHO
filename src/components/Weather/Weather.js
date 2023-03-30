@@ -8,6 +8,8 @@ const Weather = () => {
   const [location, setLocation] = useState("");
   const [isSearchedTown, setIsSearchedTown] = useState(false);
 
+  const apiKey = process.env.REACT_APP_KEY_API;
+
   const searchTown = (event) => {
     if (event.key === "Enter") {
       axios.get(url).then((response) => {
@@ -19,7 +21,7 @@ const Weather = () => {
     }
   };
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=e265e9d302bb5b2dafe06af84e4e5bee&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
   return (
     <div className="weather__container">

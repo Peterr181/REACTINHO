@@ -149,7 +149,7 @@ const Navbar = ({ isButtonClicked, setIsButtonClicked }) => {
       </ul>
       <div className="socialmedia__wrapper">
         <div className="socialmedia__container">
-          <a href="#" className="socialmedia__icon">
+          <a href="https://github.com/Peterr181" className="socialmedia__icon">
             <ion-icon name="logo-github"></ion-icon>
           </a>
           <a href="#" className="socialmedia__icon">
