@@ -16,7 +16,7 @@
 <h2 align="center">Main page</h2>
 
 
-Users can read about this website at first showing introduction component.
+<p align="center">Users can read about this website at first showing introduction component.</p>
 ![obraz](https://user-images.githubusercontent.com/102172769/222213201-da56b7f5-d7d1-4db6-894f-b7ae633a6795.png)
 
 
