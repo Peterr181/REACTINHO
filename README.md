@@ -4,12 +4,7 @@ Hey, check my newest project named ,,REACTINHO''. It's simple project built in r
 
 
 
-:smiley_cat: APIS used in this application
-<ul>
-  <li>https://openweathermap.org/</li>
-<li>https://imgflip.com/api</li>
-<li>https://api.github.com/</li>
-</ul>
+
 
 <h2 align="center">Live version!</h2>
 <p align="center">https://reactinhoo.netlify.app/</p>
@@ -32,3 +27,10 @@ Users can read about this website at first showing introduction component.
 - add fitness component to keep track on powerlifting gains
 - add component to track football matches and get better predictions for betting
 
+
+:smiley_cat: APIS used in this application
+<ul>
+  <li>https://openweathermap.org/</li>
+<li>https://imgflip.com/api</li>
+<li>https://api.github.com/</li>
+</ul>
