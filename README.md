@@ -21,7 +21,6 @@ Users can read about this website at first showing introduction component.
 
 
 :construction_worker: TO-DO
-
 - fix small bugs
 - create fully functional giter component (almost done) 
 - add fitness component to keep track on powerlifting gains
