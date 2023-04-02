@@ -137,13 +137,13 @@ const Navbar = ({ isButtonClicked, setIsButtonClicked }) => {
             <span>IT Career</span>
           </li>
         </Link>
-        <Link className="nav__link" to="/other">
+        <Link className="nav__link" to="/github">
           <li
             className={`nav__item ${activeIndex === 5 ? "active6" : ""}`}
             onClick={() => handleItemClick(5)}
           >
             <span className="material-symbols-outlined home other">folder</span>
-            <span>Other</span>
+            <span>Giter</span>
           </li>
         </Link>
       </ul>
