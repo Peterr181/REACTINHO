@@ -8,9 +8,19 @@
   padding-right: 2rem;
 }
 
+.github__wrapper {
+  background-image: url(./gitbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .github__container h1 {
   font-size: 4rem;
   padding-bottom: 2rem;
+
+  letter-spacing: 2px;
+  border-radius: 30px;
 }
 
 .github__container input {

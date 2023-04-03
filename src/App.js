@@ -8,8 +8,8 @@ import Career from "./components/Career/Career";
 import Weather from "./components/Weather/Weather";
 import Memer from "./components/Memer/Memer";
 import { TodoContext } from "./components/Todo/TodoContext";
-import Github from "./Github/Github";
-import GithubDetails from "./Github/GithubDetails";
+import Github from "./components/Github/Github";
+import GithubDetails from "./components/Github/GithubDetails";
 
 function App() {
   const [todos, setTodos] = useState([]);
