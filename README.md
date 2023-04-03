@@ -37,5 +37,5 @@
 
 <h2 align="center">Newest functionality added:</h2>
 
-<p align="center">![ezgif-1-802914e561](https://user-images.githubusercontent.com/102172769/229519027-3db8b390-a466-4c6d-9d19-e157b9337fdd.gif)</p>
+![ezgif-1-802914e561](https://user-images.githubusercontent.com/102172769/229519027-3db8b390-a466-4c6d-9d19-e157b9337fdd.gif)
 
