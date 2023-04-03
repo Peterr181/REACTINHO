@@ -9,6 +9,7 @@ import Weather from "./components/Weather/Weather";
 import Memer from "./components/Memer/Memer";
 import { TodoContext } from "./components/Todo/TodoContext";
 import Github from "./Github/Github";
+import GithubDetails from "./Github/GithubDetails";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -46,6 +47,7 @@ function App() {
               <Route path="/memer" element={<Memer />} />
               <Route path="/career" element={<Career />} />
               <Route path="/github" element={<Github />} />
+              <Route path="/github/:user" element={<GithubDetails />} />
             </Routes>
           </div>
         </div>

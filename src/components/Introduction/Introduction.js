@@ -35,7 +35,7 @@ const Introduction = () => {
         </div>
         <div className="introduction__benefits__container">
           <div className="introduction__benefits__item">
-            <div class="item__header">
+            <div className="item__header">
               <h2>Plan your day! </h2>
             </div>
 
@@ -75,33 +75,35 @@ const Introduction = () => {
             <div className="introduction__final__text__container">
               <ul>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined tasklist">
+                  <span className="material-symbols-outlined tasklist">
                     checklist
                   </span>
                   <li>You will be always perfect organized!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined">cloudy_snowing</span>
+                  <span className="material-symbols-outlined">
+                    cloudy_snowing
+                  </span>
                   <li>Always up to date with weather news!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined exercise">
+                  <span className="material-symbols-outlined exercise">
                     exercise
                   </span>
                   <li>Well informed about gym stuff!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined work">work</span>
+                  <span className="material-symbols-outlined work">work</span>
                   <li>Know everything about your future career!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined videogame">
+                  <span className="material-symbols-outlined videogame">
                     sports_esports
                   </span>
                   <li>Be more relaxed by playing short video game!</li>
                 </div>
                 <div className="intro__wrap">
-                  <span class="material-symbols-outlined star">star</span>
+                  <span className="material-symbols-outlined star">star</span>
                   <li>Be delighted with excellent futuristic design!</li>
                 </div>
               </ul>
