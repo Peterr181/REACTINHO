@@ -1,6 +1,8 @@
 .weather__container {
   padding-top: 10rem;
   height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .weather__container__item {
   width: 100%;
@@ -32,7 +34,7 @@
   padding: 2rem;
   border-radius: 15px;
   box-shadow: rgba(84, 39, 194, 1) 0px 4px 4px;
-  width: 700px;
+
   margin: 0 auto;
 }
 

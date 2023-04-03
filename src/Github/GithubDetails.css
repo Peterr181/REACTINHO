@@ -158,6 +158,12 @@
   display: block;
 }
 
+.githubdetails__fact {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
 @media screen and (max-width: 637px) {
   .language__hidden {
     display: none;

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { fetchUserDetails } from "./fetchUserData";
 import "./GithubDetails.css";
 
@@ -16,12 +15,32 @@ const GithubDetails = () => {
         const { userDetails, repositories } = await fetchUserDetails(user);
         setUserDetails(userDetails);
         setRepositories(repositories);
+        console.log(repositories[0].language);
       } catch (error) {
         console.error(error);
       }
     };
     fetchData();
   }, [user]);
+
+  const languages = [];
+  for (let i = 0; i < repositories.length; i++) {
+    const repo = repositories[i];
+    if (repo.language) {
+      languages.push(repo.language);
+    }
+  }
+  let mostCommonString = "";
+  if (languages.length > 0) {
+    const counts = languages.reduce((acc, cur) => {
+      acc[cur] = (acc[cur] || 0) + 1;
+      return acc;
+    }, {});
+    mostCommonString = Object.keys(counts).reduce((a, b) =>
+      counts[a] > counts[b] ? a : b
+    );
+  }
+
   return (
     <div className="githubdetails__container">
       <div className="githubdetails__item">
@@ -55,6 +74,10 @@ const GithubDetails = () => {
               <span className="language__hidden">{repository.language}</span>
             </a>
           ))}
+        </div>
+
+        <div className="githubdetails__fact">
+          <p>I think this guy is {mostCommonString} programmer!</p>
         </div>
         <Link to={`/github`}>
           <button className="githubdetails__button">
